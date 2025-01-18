@@ -67,3 +67,25 @@ AI/ML Experience Score:
 2: Hands-on implementation
 
 3: Advanced model work (Transformers, Neural Networks)
+
+Code Explanation
+
+The script follows these key steps:
+
+Load Resumes: Reads PDF files from the resumes/ folder using pdfplumber.
+
+Extract Text: Converts the PDF content into raw text for processing.
+
+Parse Key Fields: Uses spaCy NLP for extracting important fields like Name, Contact, University, and Skills.
+
+Scoring System:
+
+Checks for AI/ML-related keywords to assign experience scores.
+
+Uses a predefined dictionary of terms related to AI/ML & Gen AI.
+
+Batch Processing: Utilizes concurrent.futures for handling multiple resumes simultaneously.
+
+Save to Excel: Stores extracted data in resume_analysis.xlsx using pandas and openpyxl.
+
+Future Enhancem
